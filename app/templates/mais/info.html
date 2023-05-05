@@ -1,0 +1,37 @@
+<html>
+<head>
+<meta charset="pt-br"/>
+<title>inicio </title>
+</head>
+<body>
+ 
+<div>  
+    
+  <table> 
+      <tr>
+
+          <th>id</th>
+          <th>nome</th>
+          <th>idade</th>
+
+      </tr>
+
+      {% for usuarios in infor %}
+      <tr>
+             <td>{{usuarios.id_usuarios}}</td>
+             <td>{{usuarios.nome}}</td>
+             <td>{{usuarios.idade}}</td>
+
+
+      </tr>
+      {% endfor %}
+
+
+
+  </table>
+
+
+</div>
+
+</body>
+</html>

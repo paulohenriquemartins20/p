@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+<head>
+<meta charset="pt-br"/>
+<title>inicio </title>
+<link  rel='stylesheet' href='{% static "css/teste.css" %}'/>
+</head>
+<body>
+    <div class='h'><div class='des'> <h1> Cadastre-me</h1></div></div>
+
+<form action='{% url 'inforr' %}' method='post'> 
+    {% csrf_token %}
+    <div class='c'>
+         NOME  
+   <input name='nome' type='text' class='n' required/>
+         IDADE
+   <input name='idade' type='text'  class='n' required/>
+
+
+   <button>enviar</button>
+
+</div>
+</form>
+
+
+</body>
+</html>
